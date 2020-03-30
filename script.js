@@ -4,12 +4,20 @@
 
 // generateBtn.addEventListener("click", startTimer);
 
-// $("#startQuiz").click( function(startTimer)
+// startQuiz.onclick = function(){myScript};
+// startQuiz.onclick = startTimer(); 
 
+
+
+// $(document).ready(function() {
+//   $("#btnSubmit").click(function(){
+//       alert("button");
+//   }); 
+// });
 
 document.getElementById('timer').innerHTML =
   003 + ":" + 20;
-startTimer();
+
 
 function startTimer() {
   var presentTime = document.getElementById('timer').innerHTML;
