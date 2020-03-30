@@ -2,19 +2,6 @@
 
 // Add event listener to generate button
 
-// generateBtn.addEventListener("click", startTimer);
-
-// startQuiz.onclick = function(){myScript};
-// startQuiz.onclick = startTimer(); 
-
-
-
-// $(document).ready(function() {
-//   $("#btnSubmit").click(function(){
-//       alert("button");
-//   }); 
-// });
-
 document.getElementById('timer').innerHTML =
   003 + ":" + 20;
 
@@ -24,9 +11,9 @@ function startTimer() {
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
   var s = checkSecond((timeArray[1] - 1));
-  if(s==59){m=m-1}
-  if(m<0){alert('Quiz Time Expired.')}
-  
+  if (s == 59) { m = m - 1 }
+  if (m < 0) { alert('Quiz Time Expired.') }
+
   document.getElementById('timer').innerHTML =
     m + ":" + s;
   console.log(m)
@@ -34,8 +21,8 @@ function startTimer() {
 }
 
 function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "0" + sec}; 
-  if (sec < 0) {sec = "59"};
+  if (sec < 10 && sec >= 0) { sec = "0" + sec };
+  if (sec < 0) { sec = "59" };
   return sec;
 }
 
@@ -52,7 +39,5 @@ var quizQuestions = [
     choices: ["Zagreb", "Paris", "Brussles", "Berlin"],
     answer: "Brussles"
   },
-  {
-
-];
+  ];
 
